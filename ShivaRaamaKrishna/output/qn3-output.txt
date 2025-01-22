@@ -1,0 +1,19 @@
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ ls
+qn1.sh  qn2.sh  qn3  qn4  qn5  sampleFile2.txt  sampleFile.txt
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ mv qn3 qn3.sh
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ nano qn3.sh 
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ cat qn3.sh 
+mkdir -p folder1/folder2
+touch folder1/folder2/file
+ln -s folder1/folder2/file folder1/softlink-to-file
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ chmod +x qn3.sh 
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ ./qn3.sh 
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ ls
+folder1  qn1.sh  qn2.sh  qn3.sh  qn4  qn5  sampleFile2.txt  sampleFile.txt
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ cd folder1/
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1/folder1$ ls
+folder2  softlink-to-file
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1/folder1$ cd folder2/
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1/folder1/folder2$ ls
+file
+

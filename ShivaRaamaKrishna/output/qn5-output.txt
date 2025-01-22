@@ -1,0 +1,26 @@
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ ls
+folder1  qn1.sh  qn2.sh  qn3.sh  qn4.sh  qn5  sampleFile2.txt  sampleFile.txt
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ mv qn5 qn5.sh
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ nano qn5.sh
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ chmod +x qn5.sh 
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ cat qn5.sh 
+mkdir -p dir1
+cd dir1
+touch file1 file2 file3
+ls -lt > sortedList.txt
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ ./qn5.sh 
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ ls
+dir1  folder1  qn1.sh  qn2.sh  qn3.sh  qn4.sh  qn5.sh  sampleFile2.txt  sampleFile.txt
+
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ ls
+dir1  folder1  qn1.sh  qn2.sh  qn3.sh  qn4.sh  qn5.sh  sampleFile2.txt  sampleFile.txt
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ cd dir1/
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1/dir1$ ls
+file1  file2  file3  sortedList.txt
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1/dir1$ cat sortedList.txt 
+total 0
+-rw-rw-r-- 1 invictus invictus 0 Jan 22 20:59 sortedList.txt
+-rw-rw-r-- 1 invictus invictus 0 Jan 22 20:59 file1
+-rw-rw-r-- 1 invictus invictus 0 Jan 22 20:59 file2
+-rw-rw-r-- 1 invictus invictus 0 Jan 22 20:59 file3
+

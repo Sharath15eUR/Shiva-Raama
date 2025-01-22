@@ -1,0 +1,16 @@
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ nano qn1.sh 
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ chmod +x qn1.sh 
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ ./qn1.sh 
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ ls -lrt
+total 4
+-rw-rw-r-- 1 invictus invictus  0 Jan 22 20:39 qn5
+-rw-rw-r-- 1 invictus invictus  0 Jan 22 20:39 qn4
+-rw-rw-r-- 1 invictus invictus  0 Jan 22 20:39 qn3
+-rw-rw-r-- 1 invictus invictus  0 Jan 22 20:39 qn2
+-rwxrwxr-x 1 invictus invictus 47 Jan 22 20:41 qn1.sh
+-rwxrwxr-x 1 invictus invictus  0 Jan 22 20:43 sampleFile.txt
+
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ cat qn1.sh 
+touch sampleFile.txt
+chmod a+x sampleFile.txt
+

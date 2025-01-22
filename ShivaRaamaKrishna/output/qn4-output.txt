@@ -1,0 +1,347 @@
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ ls
+folder1  qn1.sh  qn2.sh  qn3.sh  qn4  qn5  sampleFile2.txt  sampleFile.txt
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ mv qn4 qn4.sh
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ nano qn4.sh 
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ chmod +x qn4.sh 
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ cat qn4.sh 
+ps aux
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ ./qn4.sh 
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.2  0.0  23280 14296 ?        Ss   19:29   0:11 /sbin/init splash
+root           2  0.0  0.0      0     0 ?        S    19:29   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    19:29   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-rcu_g]
+root           5  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-rcu_p]
+root           6  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-slub_]
+root           7  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-netns]
+root           9  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/0:0H-events_highpri]
+root          12  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-mm_pe]
+root          13  0.0  0.0      0     0 ?        I    19:29   0:00 [rcu_tasks_kthread]
+root          14  0.0  0.0      0     0 ?        I    19:29   0:00 [rcu_tasks_rude_kthread]
+root          15  0.0  0.0      0     0 ?        I    19:29   0:00 [rcu_tasks_trace_kthread]
+root          16  0.0  0.0      0     0 ?        S    19:29   0:00 [ksoftirqd/0]
+root          17  0.2  0.0      0     0 ?        R    19:29   0:10 [rcu_preempt]
+root          18  0.0  0.0      0     0 ?        S    19:29   0:00 [migration/0]
+root          19  0.0  0.0      0     0 ?        S    19:29   0:00 [idle_inject/0]
+root          20  0.0  0.0      0     0 ?        S    19:29   0:00 [cpuhp/0]
+root          21  0.0  0.0      0     0 ?        S    19:29   0:00 [cpuhp/2]
+root          22  0.0  0.0      0     0 ?        S    19:29   0:00 [idle_inject/2]
+root          23  0.0  0.0      0     0 ?        S    19:29   0:00 [migration/2]
+root          24  0.0  0.0      0     0 ?        S    19:29   0:00 [ksoftirqd/2]
+root          26  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/2:0H-events_highpri]
+root          27  0.0  0.0      0     0 ?        S    19:29   0:00 [cpuhp/4]
+root          28  0.0  0.0      0     0 ?        S    19:29   0:00 [idle_inject/4]
+root          29  0.0  0.0      0     0 ?        S    19:29   0:00 [migration/4]
+root          30  0.0  0.0      0     0 ?        S    19:29   0:00 [ksoftirqd/4]
+root          32  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/4:0H-events_highpri]
+root          33  0.0  0.0      0     0 ?        S    19:29   0:00 [cpuhp/6]
+root          34  0.0  0.0      0     0 ?        S    19:29   0:00 [idle_inject/6]
+root          35  0.0  0.0      0     0 ?        S    19:29   0:00 [migration/6]
+root          36  0.0  0.0      0     0 ?        S    19:29   0:00 [ksoftirqd/6]
+root          38  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/6:0H-events_highpri]
+root          39  0.0  0.0      0     0 ?        S    19:29   0:00 [cpuhp/8]
+root          40  0.0  0.0      0     0 ?        S    19:29   0:00 [idle_inject/8]
+root          41  0.0  0.0      0     0 ?        S    19:29   0:02 [migration/8]
+root          42  0.0  0.0      0     0 ?        S    19:29   0:00 [ksoftirqd/8]
+root          44  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/8:0H-events_highpri]
+root          45  0.0  0.0      0     0 ?        S    19:29   0:00 [cpuhp/9]
+root          46  0.0  0.0      0     0 ?        S    19:29   0:00 [idle_inject/9]
+root          47  0.0  0.0      0     0 ?        S    19:29   0:01 [migration/9]
+root          48  0.0  0.0      0     0 ?        S    19:29   0:00 [ksoftirqd/9]
+root          50  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/9:0H-events_highpri]
+root          51  0.0  0.0      0     0 ?        S    19:29   0:00 [cpuhp/10]
+root          52  0.0  0.0      0     0 ?        S    19:29   0:00 [idle_inject/10]
+root          53  0.0  0.0      0     0 ?        S    19:29   0:01 [migration/10]
+root          54  0.0  0.0      0     0 ?        S    19:29   0:00 [ksoftirqd/10]
+root          56  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/10:0H-events_highpri]
+root          57  0.0  0.0      0     0 ?        S    19:29   0:00 [cpuhp/11]
+root          58  0.0  0.0      0     0 ?        S    19:29   0:00 [idle_inject/11]
+root          59  0.0  0.0      0     0 ?        S    19:29   0:00 [migration/11]
+root          60  0.0  0.0      0     0 ?        S    19:29   0:00 [ksoftirqd/11]
+root          62  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/11:0H-events_highpri]
+root          63  0.0  0.0      0     0 ?        S    19:29   0:00 [cpuhp/1]
+root          64  0.0  0.0      0     0 ?        S    19:29   0:00 [idle_inject/1]
+root          65  0.0  0.0      0     0 ?        S    19:29   0:00 [migration/1]
+root          66  0.0  0.0      0     0 ?        S    19:29   0:00 [ksoftirqd/1]
+root          68  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/1:0H-events_highpri]
+root          69  0.0  0.0      0     0 ?        S    19:29   0:00 [cpuhp/3]
+root          70  0.0  0.0      0     0 ?        S    19:29   0:00 [idle_inject/3]
+root          71  0.0  0.0      0     0 ?        S    19:29   0:00 [migration/3]
+root          72  0.0  0.0      0     0 ?        S    19:29   0:00 [ksoftirqd/3]
+root          74  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/3:0H-events_highpri]
+root          75  0.0  0.0      0     0 ?        S    19:29   0:00 [cpuhp/5]
+root          76  0.0  0.0      0     0 ?        S    19:29   0:00 [idle_inject/5]
+root          77  0.0  0.0      0     0 ?        S    19:29   0:00 [migration/5]
+root          78  0.0  0.0      0     0 ?        S    19:29   0:00 [ksoftirqd/5]
+root          80  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/5:0H-events_highpri]
+root          81  0.0  0.0      0     0 ?        S    19:29   0:00 [cpuhp/7]
+root          82  0.0  0.0      0     0 ?        S    19:29   0:00 [idle_inject/7]
+root          83  0.0  0.0      0     0 ?        S    19:29   0:00 [migration/7]
+root          84  0.0  0.0      0     0 ?        S    19:29   0:00 [ksoftirqd/7]
+root          86  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/7:0H-events_highpri]
+root          87  0.0  0.0      0     0 ?        S    19:29   0:00 [kdevtmpfs]
+root          88  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-inet_]
+root          90  0.0  0.0      0     0 ?        S    19:29   0:00 [kauditd]
+root          91  0.0  0.0      0     0 ?        S    19:29   0:00 [khungtaskd]
+root          92  0.0  0.0      0     0 ?        S    19:29   0:00 [oom_reaper]
+root          94  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-write]
+root          95  0.0  0.0      0     0 ?        S    19:29   0:00 [kcompactd0]
+root          96  0.0  0.0      0     0 ?        SN   19:29   0:00 [ksmd]
+root          97  0.0  0.0      0     0 ?        SN   19:29   0:00 [khugepaged]
+root          98  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-kinte]
+root          99  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-kbloc]
+root         100  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-blkcg]
+root         101  0.0  0.0      0     0 ?        S    19:29   0:00 [irq/9-acpi]
+root         105  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-tpm_d]
+root         106  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-ata_s]
+root         107  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-md]
+root         108  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-md_bi]
+root         109  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-edac-]
+root         110  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-devfr]
+root         111  0.0  0.0      0     0 ?        S    19:29   0:00 [watchdogd]
+root         113  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/9:1H-events_highpri]
+root         114  0.0  0.0      0     0 ?        S    19:29   0:00 [kswapd0]
+root         115  0.0  0.0      0     0 ?        S    19:29   0:00 [ecryptfs-kthread]
+root         116  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-kthro]
+root         117  0.0  0.0      0     0 ?        S    19:29   0:00 [irq/123-pciehp]
+root         118  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-acpi_]
+root         119  0.0  0.0      0     0 ?        S    19:29   0:00 [hwrng]
+root         120  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-hfi-u]
+root         121  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-mld]
+root         122  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-ipv6_]
+root         129  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-kstrp]
+root         150  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-charg]
+root         173  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/11:1H-events_highpri]
+root         177  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/10:1H-kblockd]
+root         179  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/4:1H-events_highpri]
+root         192  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/7:1H-kblockd]
+root         193  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/0:1H-events_highpri]
+root         214  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/1:1H-events_highpri]
+root         215  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/8:1H-events_highpri]
+root         226  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/2:1H-events_highpri]
+root         227  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/5:1H-events_highpri]
+root         228  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/6:1H-events_highpri]
+root         230  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/3:1H-kblockd]
+root         262  0.1  0.0      0     0 ?        S    19:29   0:06 [irq/177-PIXA3848:00]
+root         267  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-nvme-]
+root         268  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-nvme-]
+root         269  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-nvme-]
+root         270  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-nvme-]
+root         310  0.0  0.0      0     0 ?        S    19:29   0:01 [jbd2/nvme0n1p7-8]
+root         311  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-ext4-]
+root         361  0.0  0.1  67632 22236 ?        S<s  19:29   0:01 /usr/lib/systemd/systemd-journald
+root         421  0.0  0.0  30464  8580 ?        Ss   19:29   0:01 /usr/lib/systemd/systemd-udevd
+root         432  0.0  0.0      0     0 ?        S    19:29   0:00 [psimon]
+root         526  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-cfg80]
+root         545  0.1  0.0      0     0 ?        S    19:29   0:09 [irq/193-iwlwifi:default_queue]
+root         546  0.0  0.0      0     0 ?        S    19:29   0:01 [irq/194-iwlwifi:queue_1]
+root         547  0.0  0.0      0     0 ?        S    19:29   0:03 [irq/195-iwlwifi:queue_2]
+root         548  0.0  0.0      0     0 ?        S    19:29   0:04 [irq/196-iwlwifi:queue_3]
+root         549  0.0  0.0      0     0 ?        S    19:29   0:00 [irq/197-iwlwifi:queue_4]
+root         550  0.0  0.0      0     0 ?        S    19:29   0:04 [irq/198-iwlwifi:queue_5]
+root         551  0.1  0.0      0     0 ?        S    19:29   0:05 [irq/199-iwlwifi:queue_6]
+root         552  0.0  0.0      0     0 ?        S    19:29   0:02 [irq/200-iwlwifi:queue_7]
+root         553  0.0  0.0      0     0 ?        S    19:29   0:00 [irq/201-iwlwifi:queue_8]
+root         554  0.0  0.0      0     0 ?        S    19:29   0:00 [irq/202-iwlwifi:queue_9]
+root         555  0.0  0.0      0     0 ?        S    19:29   0:00 [irq/203-iwlwifi:queue_10]
+root         556  0.0  0.0      0     0 ?        S    19:29   0:00 [irq/204-iwlwifi:queue_11]
+root         557  0.0  0.0      0     0 ?        S    19:29   0:00 [irq/205-iwlwifi:queue_12]
+root         558  0.0  0.0      0     0 ?        S    19:29   0:00 [irq/206-iwlwifi:exception]
+root         561  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-crypt]
+root         592  0.0  0.0      0     0 ?        S    19:29   0:00 [irq/16-processor_thermal_device_pci]
+root         596  0.0  0.0      0     0 ?        S    19:29   0:00 [nv_queue]
+root         597  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-ttm]
+root         598  0.0  0.0      0     0 ?        S    19:29   0:00 [nv_queue]
+root         614  0.0  0.0      0     0 ?        S    19:29   0:00 [card1-crtc0]
+root         615  0.0  0.0      0     0 ?        S    19:29   0:00 [card1-crtc1]
+root         616  0.0  0.0      0     0 ?        S    19:29   0:00 [card1-crtc2]
+root         617  0.0  0.0      0     0 ?        S    19:29   0:00 [card1-crtc3]
+root         754  0.0  0.0      0     0 ?        S    19:29   0:00 [nvidia-modeset/kthread_q]
+root         755  0.0  0.0      0     0 ?        S    19:29   0:00 [nvidia-modeset/deferred_close_kthread_q]
+root         758  0.0  0.0      0     0 ?        S    19:29   0:00 [irq/208-nvidia]
+root         760  0.0  0.0      0     0 ?        S    19:29   0:00 [nv_queue]
+systemd+     762  0.0  0.0  17556  7628 ?        Ss   19:29   0:02 /usr/lib/systemd/systemd-oomd
+systemd+     764  0.0  0.0  21848 13240 ?        Ss   19:29   0:00 /usr/lib/systemd/systemd-resolved
+systemd+     765  0.0  0.0  91044  7936 ?        Ssl  19:29   0:00 /usr/lib/systemd/systemd-timesyncd
+avahi        791  0.1  0.0   9160  5076 ?        Ss   19:29   0:05 avahi-daemon: running [invictus-Nitro-ANV15-51.local]
+root         792  0.0  0.0  13788  7024 ?        Ss   19:29   0:00 /usr/libexec/bluetooth/bluetoothd
+message+     793  0.1  0.0  12416  7684 ?        Ss   19:29   0:06 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --s
+gnome-r+     797  0.0  0.1 365472 16492 ?        Ssl  19:29   0:00 /usr/libexec/gnome-remote-desktop-daemon --system
+polkitd      810  0.0  0.0 399444 12608 ?        Ssl  19:29   0:02 /usr/lib/polkit-1/polkitd --no-debug
+root         815  0.0  0.0 322184  7968 ?        Ssl  19:29   0:00 /usr/libexec/power-profiles-daemon
+root         831  0.0  0.0 321960  7912 ?        Ssl  19:29   0:00 /usr/libexec/accounts-daemon
+root         833  0.0  0.0  18092  2940 ?        Ss   19:29   0:00 /usr/sbin/cron -f -P
+root         835  0.0  0.0 318520  7056 ?        Ssl  19:29   0:00 /usr/libexec/switcheroo-control
+root         839  0.0  0.0  18160  9308 ?        Ss   19:29   0:01 /usr/lib/systemd/systemd-logind
+root         841  0.0  0.0 433572 10736 ?        Ssl  19:29   0:01 /usr/sbin/thermald --systemd --dbus-enable --adaptive
+root         843  0.0  0.0 469412 14264 ?        Ssl  19:29   0:01 /usr/libexec/udisks2/udisksd
+avahi        859  0.0  0.0   8476  1504 ?        S    19:29   0:00 avahi-daemon: chroot helper
+syslog       913  0.0  0.0 222564  5884 ?        Ssl  19:29   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         924  0.1  0.1 345596 20184 ?        Ssl  19:29   0:05 /usr/sbin/NetworkManager --no-daemon
+root         926  0.0  0.0  18276 12064 ?        Ss   19:29   0:00 /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+root         950  0.0  0.0 392192 12744 ?        Ssl  19:29   0:00 /usr/sbin/ModemManager
+root         952  0.0  0.0 322296  8092 ?        Ssl  19:29   0:00 /usr/libexec/boltd
+root        1081  0.0  0.0 326100  9960 ?        Ssl  19:29   0:01 /usr/libexec/upowerd
+root        1192  0.0  0.0      0     0 ?        S    19:29   0:00 [irq/209-AudioDSP]
+root        1196  0.0  0.0      0     0 ?        S    19:29   0:00 [UVM global queue]
+root        1197  0.0  0.0      0     0 ?        S    19:29   0:00 [UVM deferred release queue]
+root        1198  0.0  0.0      0     0 ?        S    19:29   0:00 [UVM Tools Event Queue]
+nvidia-+    1216  0.0  0.0   5228  2092 ?        Ss   19:29   0:00 /usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbos
+root        1268  0.0  0.0  46904 12224 ?        Ss   19:29   0:00 /usr/sbin/cupsd -l
+root        1271  0.0  0.1 120912 23268 ?        Ssl  19:29   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for
+root        1286  0.0  0.0 323484  9312 ?        Ssl  19:29   0:00 /usr/sbin/gdm3
+root        1294  0.0  0.0      0     0 ?        I<   19:29   0:00 [kworker/R-USBC0]
+rtkit       1328  0.0  0.0  22940  3536 ?        SNsl 19:29   0:00 /usr/libexec/rtkit-daemon
+root        1348  0.0  0.0      0     0 ?        S<   19:29   0:00 [krfcommd]
+colord      1501  0.0  0.0 328880 14964 ?        Ssl  19:29   0:00 /usr/libexec/colord
+cups-br+    1843  0.0  0.1 268392 20032 ?        Ssl  19:29   0:00 /usr/sbin/cups-browsed
+kernoops    1845  0.0  0.0  12744  2388 ?        Ss   19:29   0:00 /usr/sbin/kerneloops --test
+kernoops    1848  0.0  0.0  12744  2436 ?        Ss   19:29   0:00 /usr/sbin/kerneloops
+root        1872  0.0  0.0 398712 10836 ?        Sl   19:29   0:00 gdm-session-worker [pam/gdm-password]
+invictus    1897  0.0  0.0  21228 12892 ?        Ss   19:29   0:02 /usr/lib/systemd/systemd --user
+invictus    1903  0.0  0.0  21456  3652 ?        S    19:29   0:00 (sd-pam)
+invictus    1913  0.1  0.1 127980 19084 ?        S<sl 19:29   0:06 /usr/bin/pipewire
+invictus    1914  0.0  0.0 106404  6128 ?        Ssl  19:29   0:00 /usr/bin/pipewire -c filter-chain.conf
+invictus    1916  0.3  0.1 416808 20496 ?        S<sl 19:29   0:18 /usr/bin/wireplumber
+invictus    1917  0.4  0.1 135588 19840 ?        S<sl 19:29   0:24 /usr/bin/pipewire-pulse
+invictus    1919  0.0  0.0 325308 10612 ?        SLsl 19:29   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-direc
+invictus    1927  0.0  0.0  11500  6784 ?        Ss   19:29   0:03 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activ
+invictus    1962  0.0  0.0 244380  6208 tty2     Ssl+ 19:29   0:00 /usr/libexec/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/g
+invictus    1967  5.9  1.1 26324984 189384 tty2  Sl+  19:29   5:04 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -nolisten tcp 
+invictus    2039  0.0  0.1 306876 16932 tty2     Sl+  19:29   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+invictus    2122  0.0  0.0 383000  8292 ?        Ssl  19:29   0:00 /usr/libexec/at-spi-bus-launcher
+invictus    2129  0.0  0.0   9608  5340 ?        S    19:29   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --no
+invictus    2138  0.0  0.0 162652  6932 ?        Ssl  19:29   0:00 /usr/libexec/gcr-ssh-agent --base-dir /run/user/1000/gcr
+invictus    2139  0.0  0.0 100216  5732 ?        Ssl  19:29   0:00 /usr/libexec/gnome-session-ctl --monitor
+invictus    2153  0.0  0.0 322960  8104 ?        Ssl  19:29   0:00 /usr/libexec/gvfsd
+invictus    2161  0.0  0.0 468380  7240 ?        Sl   19:29   0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+invictus    2164  0.0  0.1 529196 18672 ?        Ssl  19:29   0:00 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+invictus    2196  6.6  1.8 4821724 299128 ?      Ssl  19:29   5:43 /usr/bin/gnome-shell
+invictus    2234  0.1  0.7 1269132 123140 ?      Sl   19:29   0:05 /usr/libexec/mutter-x11-frames
+invictus    2237  0.0  0.0 236056  8392 ?        Sl   19:29   0:01 /usr/libexec/at-spi2-registryd --use-gnome-session
+invictus    2266  0.0  0.0 318104  6172 ?        Ssl  19:29   0:00 /usr/libexec/xdg-permission-store
+invictus    2268  0.0  0.1 654792 17936 ?        Sl   19:29   0:00 /usr/libexec/gnome-shell-calendar-server
+invictus    2280  0.0  0.2 1010048 43284 ?       Ssl  19:29   0:00 /usr/libexec/evolution-source-registry
+invictus    2292  0.0  0.1 2810576 27512 ?       Sl   19:29   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+invictus    2307  0.0  0.1 555380 24436 ?        Sl   19:29   0:00 /usr/libexec/goa-daemon
+invictus    2313  0.2  0.0 397528 12516 ?        Ssl  19:29   0:14 /usr/bin/ibus-daemon --panel disable --xim
+invictus    2318  0.0  0.0 392248  6820 ?        Ssl  19:29   0:00 /usr/libexec/gsd-a11y-settings
+invictus    2319  0.0  0.1 424272 25160 ?        Ssl  19:29   0:00 /usr/libexec/gsd-color
+invictus    2320  0.0  0.0 440392 12520 ?        Ssl  19:29   0:00 /usr/libexec/gsd-datetime
+invictus    2324  0.0  0.0 467752  8244 ?        Ssl  19:29   0:00 /usr/libexec/gsd-housekeeping
+invictus    2326  0.0  0.1 423200 24816 ?        Ssl  19:29   0:00 /usr/libexec/gsd-keyboard
+invictus    2329  0.0  0.1 679144 30564 ?        Ssl  19:29   0:01 /usr/libexec/gsd-media-keys
+invictus    2334  0.0  0.1 604252 30176 ?        Ssl  19:29   0:00 /usr/libexec/gsd-power
+invictus    2336  0.0  0.0 332312 11668 ?        Ssl  19:29   0:00 /usr/libexec/gsd-print-notifications
+invictus    2337  0.0  0.0 539752  6912 ?        Ssl  19:29   0:00 /usr/libexec/gsd-rfkill
+invictus    2343  0.0  0.0 318228  6400 ?        Ssl  19:29   0:00 /usr/libexec/gsd-screensaver-proxy
+invictus    2345  0.0  0.0 551924 12100 ?        Ssl  19:29   0:00 /usr/libexec/gsd-sharing
+invictus    2349  0.0  0.0 394548  8428 ?        Ssl  19:29   0:00 /usr/libexec/gsd-smartcard
+invictus    2351  0.0  0.0 402368  9848 ?        Ssl  19:29   0:00 /usr/libexec/gsd-sound
+invictus    2352  0.0  0.1 423720 25132 ?        Ssl  19:29   0:00 /usr/libexec/gsd-wacom
+invictus    2360  0.0  0.1 425472 27696 ?        Ssl  19:29   0:00 /usr/libexec/gsd-xsettings
+invictus    2375  0.0  0.3 894920 61644 ?        Sl   19:29   0:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+invictus    2385  0.0  0.0 471768 11360 ?        Ssl  19:29   0:00 /usr/libexec/gvfs-udisks2-volume-monitor
+invictus    2401  0.0  0.0 471528  9240 ?        Sl   19:29   0:00 /usr/libexec/goa-identity-service
+invictus    2403  0.0  0.0 305624  7416 ?        Sl   19:29   0:00 /usr/libexec/gsd-disk-utility-notify
+invictus    2408  0.9  1.4 2348736 230812 ?      Sl   19:29   0:49 /usr/bin/gnome-software --gapplication-service
+invictus    2427  0.0  0.1 1440144 24788 ?       Ssl  19:29   0:00 /usr/libexec/evolution-calendar-factory
+invictus    2459  0.0  0.0 245316  7136 ?        Sl   19:29   0:00 /usr/libexec/ibus-memconf
+invictus    2463  0.1  0.1 356600 31868 ?        Sl   19:29   0:07 /usr/libexec/ibus-extension-gtk3
+invictus    2471  0.0  0.1 275924 25012 ?        Sl   19:29   0:00 /usr/libexec/ibus-x11 --kill-daemon
+invictus    2479  0.0  0.0 319096  7160 ?        Sl   19:29   0:00 /usr/libexec/ibus-portal
+invictus    2507  0.0  0.0 424872 15180 ?        Sl   19:29   0:00 /usr/libexec/gsd-printer
+invictus    2546  0.0  0.0 398044  8188 ?        Ssl  19:29   0:00 /usr/libexec/gvfs-afc-volume-monitor
+invictus    2573  0.0  0.0 319428  7032 ?        Ssl  19:29   0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+invictus    2580  0.0  0.1 834152 30156 ?        Ssl  19:29   0:00 /usr/libexec/evolution-addressbook-factory
+invictus    2588  0.0  0.0 319060  7228 ?        Ssl  19:29   0:00 /usr/libexec/gvfs-mtp-volume-monitor
+invictus    2599  0.0  0.0 318564  6668 ?        Ssl  19:29   0:00 /usr/libexec/gvfs-goa-volume-monitor
+invictus    2631  0.0  0.1 2876084 27332 ?       Sl   19:29   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+invictus    2651  0.0  0.0 710476 15212 ?        Ssl  19:29   0:00 /usr/libexec/xdg-desktop-portal
+invictus    2657  0.0  0.0 545228  7624 ?        Ssl  19:29   0:00 /usr/libexec/xdg-document-portal
+root        2664  0.0  0.0   2704  2056 ?        Ss   19:29   0:00 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/
+invictus    2668  0.0  0.0 245440  7572 ?        Sl   19:29   0:03 /usr/libexec/ibus-engine-simple
+invictus    2676  0.0  0.1 743240 26300 ?        SNsl 19:29   0:01 /usr/libexec/tracker-miner-fs-3
+invictus    2679  0.0  0.6 1471748 112144 ?      Ssl  19:29   0:02 /usr/libexec/xdg-desktop-portal-gnome
+invictus    2694  0.0  0.0 230340  6252 ?        Ssl  19:29   0:00 /usr/libexec/dconf-service
+invictus    2734  0.0  0.0 544380  8988 ?        Sl   19:29   0:00 /usr/libexec/gvfsd-trash --spawner :1.22 /org/gtk/gvfs/exec_spaw/0
+invictus    2752  0.0  0.1 424104 26192 ?        Ssl  19:29   0:00 /usr/libexec/xdg-desktop-portal-gtk
+root        2778  0.0  0.2 587904 43132 ?        Ssl  19:29   0:02 /usr/libexec/fwupd/fwupd
+invictus    2892  0.0  0.0 245108  6880 ?        Ssl  19:29   0:00 /usr/libexec/gvfsd-metadata
+invictus    3002  0.0  0.8 1609188 133492 ?      Sl   19:29   0:01 /usr/bin/gnome-calendar --gapplication-service
+root        3416  0.0  0.0 100840  3008 ?        Ss   19:30   0:00 gpg-agent --homedir /var/lib/fwupd/gnupg --use-standard-socket --daemon
+invictus    3529  0.0  0.2 501852 34360 ?        Sl   19:30   0:00 /usr/bin/update-notifier
+invictus    3803  0.0  0.2 443712 41404 ?        SLl  19:31   0:00 /usr/bin/seahorse --gapplication-service
+root        3920  0.2  0.0      0     0 ?        I    19:31   0:11 [kworker/u24:5-flush-259:0]
+invictus    4944  0.0  0.0 396900  8700 ?        Sl   19:35   0:00 /usr/libexec/gvfsd-recent --spawner :1.22 /org/gtk/gvfs/exec_spaw/1
+root        7074  0.0  0.0      0     0 ?        I    19:46   0:00 [kworker/10:2-cgroup_destroy]
+root        7079  0.0  0.0      0     0 ?        I    19:47   0:00 [kworker/11:1-mm_percpu_wq]
+root        9146  0.0  0.0      0     0 ?        I    19:54   0:00 [kworker/1:2-mm_percpu_wq]
+root        9223  0.0  0.0      0     0 ?        I    19:54   0:00 [kworker/8:1-events]
+root       12791  0.0  0.0      0     0 ?        I    20:03   0:01 [kworker/3:1-mm_percpu_wq]
+root       12792  0.2  0.0      0     0 ?        I<   20:04   0:06 [kworker/u25:3-rb_allocator]
+root       12843  0.0  0.0      0     0 ?        I    20:09   0:00 [kworker/8:0-events]
+invictus   12901  0.0  0.0  49072  8468 ?        Ss   20:09   0:00 /usr/libexec/bluetooth/obexd
+root       12905  0.0  0.0      0     0 ?        I    20:09   0:00 [kworker/11:0-events]
+root       13279  0.0  0.0      0     0 ?        I    20:14   0:00 [kworker/6:1-mm_percpu_wq]
+root       13470  0.0  0.0      0     0 ?        I    20:15   0:00 [kworker/10:1-events]
+root       14083  0.0  0.0      0     0 ?        I    20:15   0:00 [kworker/5:0-mm_percpu_wq]
+root       15567  0.0  0.0      0     0 ?        I    20:21   0:00 [kworker/4:1-events]
+root       16303  0.0  0.0      0     0 ?        I    20:23   0:00 [kworker/7:1-events]
+root       16659  0.0  0.0      0     0 ?        S    20:23   0:00 [psimon]
+root       16661  0.0  0.0      0     0 ?        I    20:23   0:00 [kworker/2:0-mm_percpu_wq]
+root       16792  0.0  0.0      0     0 ?        I    20:23   0:00 [kworker/9:1-events]
+root       16805  0.1  0.0      0     0 ?        I    20:23   0:02 [kworker/u24:7-flush-259:0]
+root       16812  0.1  0.0      0     0 ?        I    20:23   0:02 [kworker/u24:14-i915]
+root       16850  0.0  0.0      0     0 ?        S    20:31   0:00 [irq/179-mei_me]
+root       16879  0.0  0.0      0     0 ?        S    20:31   0:00 [nvidia]
+invictus   17054  0.1  0.3 3214840 60164 ?       Sl   20:32   0:01 gjs /usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js -E -P /usr/share
+invictus   17186  0.0  0.0  18608  3584 ?        S    20:32   0:00 /bin/bash /usr/bin/brave-browser-stable
+invictus   17191  0.0  0.0  17096  1792 ?        S    20:32   0:00 cat
+invictus   17192  0.0  0.0  17096  1792 ?        S    20:32   0:00 cat
+invictus   17193  6.8  2.0 34275304 335968 ?     SLl  20:32   1:35 /opt/brave.com/brave/brave
+invictus   17199  0.0  0.0 33576232 3584 ?       Sl   20:32   0:00 /opt/brave.com/brave/chrome_crashpad_handler --monitor-self --monitor-self-annotation=
+invictus   17201  0.0  0.0 33568020 3328 ?       Sl   20:32   0:00 /opt/brave.com/brave/chrome_crashpad_handler --no-periodic-tasks --monitor-self-annota
+invictus   17207  0.0  0.4 34175196 68992 ?      S    20:32   0:00 /opt/brave.com/brave/brave --type=zygote --no-zygote-sandbox --string-annotations --cr
+invictus   17208  0.0  0.4 34175184 69120 ?      S    20:32   0:00 /opt/brave.com/brave/brave --type=zygote --string-annotations --crashpad-handler-pid=1
+invictus   17213  0.0  0.1 34175208 18028 ?      S    20:32   0:00 /opt/brave.com/brave/brave --type=zygote --string-annotations --crashpad-handler-pid=1
+invictus   17258 11.0  1.1 34610796 188016 ?     Sl   20:32   2:33 /opt/brave.com/brave/brave --type=gpu-process --string-annotations --crashpad-handler-
+invictus   17260  1.1  0.7 33996388 123180 ?     Sl   20:32   0:16 /opt/brave.com/brave/brave --type=utility --utility-sub-type=network.mojom.NetworkServ
+invictus   17272  0.0  0.3 34225552 56176 ?      Sl   20:32   0:00 /opt/brave.com/brave/brave --type=utility --utility-sub-type=storage.mojom.StorageServ
+root       17737  0.0  0.0      0     0 ?        I<   20:33   0:00 [kworker/R-uas]
+invictus   17862  0.0  0.5 34032720 84992 ?      Sl   20:33   0:00 /opt/brave.com/brave/brave --type=utility --utility-sub-type=audio.mojom.AudioService 
+invictus   17934  5.7  1.3 1218359004 223840 ?   Sl   20:35   1:10 /opt/brave.com/brave/brave --type=renderer --string-annotations --crashpad-handler-pid
+root       17983  0.0  0.0      0     0 ?        I    20:37   0:00 [kworker/3:0]
+invictus   18017  0.3  1.0 2021628 168432 ?      Sl   20:37   0:04 /usr/bin/nautilus --gapplication-service
+invictus   18054  0.0  0.0  97452  6548 ?        Sl   20:38   0:00 /usr/lib/libreoffice/program/oosplash --impress file:///media/invictus/Linux/Campus%20
+invictus   18070  0.8  2.3 2051716 383952 ?      Sl   20:38   0:08 /usr/lib/libreoffice/program/soffice.bin --impress file:///media/invictus/Linux/Campus
+root       18215  0.0  0.0      0     0 ?        I    20:38   0:00 [kworker/7:2-cgroup_destroy]
+invictus   18218  0.0  0.1  40556 19328 ?        S    20:38   0:00 /usr/bin/python3 /usr/bin/gnome-terminal --wait
+invictus   18221  0.0  0.1 391476 28160 ?        Sl   20:38   0:00 /usr/bin/gnome-terminal.real --wait
+invictus   18225  1.5  0.3 853556 56564 ?        Ssl  20:38   0:15 /usr/libexec/gnome-terminal-server
+invictus   18238  0.0  0.0  19924  5120 pts/0    Ss   20:38   0:00 bash
+root       18269  0.0  0.0      0     0 ?        I    20:39   0:00 [kworker/4:0-inet_frag_wq]
+invictus   18282  7.6  1.1 1216608808 191280 ?   Sl   20:39   1:11 /opt/brave.com/brave/brave --type=renderer --string-annotations --crashpad-handler-pid
+invictus   18295  0.0  0.4 1216513384 69900 ?    Sl   20:39   0:00 /opt/brave.com/brave/brave --type=renderer --string-annotations --crashpad-handler-pid
+root       18306  0.0  0.0      0     0 ?        I    20:39   0:00 [kworker/0:2-events]
+invictus   18520  0.0  0.0 471056  8064 ?        Sl   20:43   0:00 /usr/libexec/gvfsd-network --spawner :1.22 /org/gtk/gvfs/exec_spaw/3
+invictus   18528  0.0  0.1 614360 23296 ?        Sl   20:43   0:00 /usr/libexec/gvfsd-smb-browse --spawner :1.22 /org/gtk/gvfs/exec_spaw/4
+invictus   18539  0.0  0.0 399216  8448 ?        Sl   20:43   0:00 /usr/libexec/gvfsd-dnssd --spawner :1.22 /org/gtk/gvfs/exec_spaw/5
+root       18639  0.0  0.0      0     0 ?        I    20:44   0:00 [kworker/9:2]
+root       18640  0.0  0.0      0     0 ?        I    20:44   0:00 [kworker/5:2]
+root       18693  0.2  0.0      0     0 ?        I<   20:44   0:01 [kworker/u25:0-i915_flip]
+root       18695  0.0  0.0      0     0 ?        I    20:44   0:00 [kworker/1:0-cgroup_destroy]
+root       18719  0.0  0.0      0     0 ?        I    20:46   0:00 [kworker/6:2-events]
+root       18902  0.1  0.0      0     0 ?        I    20:46   0:00 [kworker/u24:0-events_power_efficient]
+root       18949  0.0  0.0      0     0 ?        I    20:47   0:00 [kworker/0:1-events]
+root       18965  0.0  0.0      0     0 ?        I    20:47   0:00 [kworker/2:1]
+root       19000  0.0  0.0      0     0 ?        I    20:52   0:00 [kworker/0:0-i915-unordered]
+root       19001  0.0  0.0      0     0 ?        I<   20:52   0:00 [kworker/u25:1-rb_allocator]
+root       19102  1.4  0.2 458160 39924 ?        Ssl  20:52   0:02 /usr/libexec/packagekitd
+root       19227  0.0  0.0      0     0 ?        I    20:53   0:00 [kworker/4:2-cgroup_destroy]
+root       19232  0.0  0.0      0     0 ?        I<   20:53   0:00 [kworker/u25:2-rb_allocator]
+root       19242  0.0  0.0      0     0 ?        I    20:54   0:00 [kworker/6:0]
+invictus   19253  0.0  0.0  19924  3544 pts/0    S+   20:55   0:00 bash
+invictus   19254  100  0.0  22416  4480 pts/0    R+   20:55   0:00 ps aux
+invictus@invictus-Nitro-ANV15-51:~/Downloads/module1$ 
+

@@ -1,0 +1,5 @@
+total 0
+-rw-rw-r-- 1 invictus invictus 0 Jan 22 20:59 sortedList.txt
+-rw-rw-r-- 1 invictus invictus 0 Jan 22 20:59 file1
+-rw-rw-r-- 1 invictus invictus 0 Jan 22 20:59 file2
+-rw-rw-r-- 1 invictus invictus 0 Jan 22 20:59 file3
