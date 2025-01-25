@@ -1,0 +1,17 @@
+invictus@invictus:~/Downloads/Linux/module2$ cat qn2.sh 
+sed 's/localhost/127.0.01/g' config.txt > qn2output.txt
+invictus@invictus:~/Downloads/Linux/module2$ chmod +x qn2.sh 
+invictus@invictus:~/Downloads/Linux/module2$ cat config.txt 
+# Sample configuration file
+server_name=localhost
+port=8080
+database_host=localhost
+api_endpoint=http://localhost/api/v1
+invictus@invictus:~/Downloads/Linux/module2$ ./qn2.sh 
+invictus@invictus:~/Downloads/Linux/module2$ cat qn2output.txt 
+# Sample configuration file
+server_name=127.0.01
+port=8080
+database_host=127.0.01
+api_endpoint=http://127.0.01/api/v1
+

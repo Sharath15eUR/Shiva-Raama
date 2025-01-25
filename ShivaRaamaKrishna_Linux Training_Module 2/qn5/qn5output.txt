@@ -1,0 +1,7 @@
+invictus@invictus:~/Downloads/Linux/module2$ cat qn5.sh 
+ip route | awk '/default/ {print $3}'| sort -u
+invictus@invictus:~/Downloads/Linux/module2$ chmod +x qn5.sh 
+invictus@invictus:~/Downloads/Linux/module2$ ./qn5.sh 
+172.16.16.1
+192.168.137.1
+

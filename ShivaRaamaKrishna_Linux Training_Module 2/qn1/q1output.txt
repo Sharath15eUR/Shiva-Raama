@@ -1,0 +1,21 @@
+invictus@invictus:~$ chmod +x qn1.sh
+invictus@invictus:~$ chmod +x qn1.sh
+invictus@invictus:~$ ./qn1.sh 
+find: ‘./.local/share/Trash/files/temp/file1’: Permission denied
+invictus@invictus:~$ cat large_files.txt 
+./.cache/bijiben-shell-search-provider/tracker3/meta.db-wal 2.7M
+./.cache/bijiben/tracker3/meta.db-wal 2.7M
+./.cache/BraveSoftware/Brave-Browser/Default/Cache/Cache_Data/3f6cd489b8532731_0 1.8M
+./.cache/BraveSoftware/Brave-Browser/Default/Cache/Cache_Data/a01c683191e719da_0 5.1M
+./.cache/BraveSoftware/Brave-Browser/Default/Cache/Cache_Data/ae53e8cfc23d0819_0 2.5M
+./.cache/BraveSoftware/Brave-Browser/Default/Code 1.2M
+./.cache/BraveSoftware/Brave-Browser/Default/Code 18M
+./.cache/BraveSoftware/Brave-Browser/Default/Code 1.4M
+./.cache/BraveSoftware/Brave-Browser/Default/Code 1.3M
+./.cache/BraveSoftware/Brave-Browser/Default/Code 3.4M
+./.cache/BraveSoftware/Brave-Browser/Default/Code 1.3M
+./.cache/BraveSoftware/Brave-Browser/Default/Code 2.3M
+./.cache/BraveSoftware/Brave-Browser/Default/Code 2.3M
+./.cache/BraveSoftware/Brave-Browser/Default/Code 17M
+./.cache/BraveSoftware/Brave-Browser/Default/Code 4.2M
+

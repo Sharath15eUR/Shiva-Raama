@@ -1,0 +1,11 @@
+invictus@invictus:~/Downloads/Linux/module2$ nano qn4.sh
+invictus@invictus:~/Downloads/Linux/module2$ cat qn4.sh 
+pid=$(ps aux --sort=-%mem | awk 'NR==2 {print $2}') && kill -9 $pid
+invictus@invictus:~/Downloads/Linux/module2$ chmod +x qn4.sh 
+invictus@invictus:~/Downloads/Linux/module2$ ps
+    PID TTY          TIME CMD
+   5250 pts/1    00:00:00 bash
+  12445 pts/1    00:00:00 ps
+invictus@invictus:~/Downloads/Linux/module2$ ./qn4.sh 
+
+
