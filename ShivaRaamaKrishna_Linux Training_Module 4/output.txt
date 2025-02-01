@@ -1,72 +1,36 @@
 "frame.time": "Dec 31, 2024 12:50:25.890970000 India Standard Time",
-"wlan.fc.type": "",
-"wlan.fc.subtype": "",
 
-"frame.time": "",
 "wlan.fc.type": "0",
-"wlan.fc.subtype": "",
 
-"frame.time": "",
-"wlan.fc.type": "",
 "wlan.fc.subtype": "8",
 
 "frame.time": "Dec 31, 2024 12:50:25.892357000 India Standard Time",
-"wlan.fc.type": "",
-"wlan.fc.subtype": "",
 
-"frame.time": "",
 "wlan.fc.type": "0",
-"wlan.fc.subtype": "",
 
-"frame.time": "",
-"wlan.fc.type": "",
 "wlan.fc.subtype": "8",
 
 "frame.time": "Dec 31, 2024 12:50:25.928606000 India Standard Time",
-"wlan.fc.type": "",
-"wlan.fc.subtype": "",
 
-"frame.time": "",
 "wlan.fc.type": "0",
-"wlan.fc.subtype": "",
 
-"frame.time": "",
-"wlan.fc.type": "",
 "wlan.fc.subtype": "8",
 
 "frame.time": "Dec 31, 2024 12:50:25.983072000 India Standard Time",
-"wlan.fc.type": "",
-"wlan.fc.subtype": "",
 
-"frame.time": "",
 "wlan.fc.type": "0",
-"wlan.fc.subtype": "",
 
-"frame.time": "",
-"wlan.fc.type": "",
 "wlan.fc.subtype": "8",
 
 "frame.time": "Dec 31, 2024 12:50:25.983586000 India Standard Time",
-"wlan.fc.type": "",
-"wlan.fc.subtype": "",
 
-"frame.time": "",
 "wlan.fc.type": "0",
-"wlan.fc.subtype": "",
 
-"frame.time": "",
-"wlan.fc.type": "",
 "wlan.fc.subtype": "8",
 
 "frame.time": "Dec 31, 2024 12:50:25.993337000 India Standard Time",
-"wlan.fc.type": "",
-"wlan.fc.subtype": "",
 
-"frame.time": "",
 "wlan.fc.type": "0",
-"wlan.fc.subtype": "",
 
-"frame.time": "",
-"wlan.fc.type": "",
 "wlan.fc.subtype": "8",
 

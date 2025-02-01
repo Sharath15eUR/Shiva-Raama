@@ -19,19 +19,21 @@ fi
 > "$output_file"
 
 while IFS= read -r line; do
-    frame_time=$(echo "$line" | grep -o '"frame.time": "[^"]*' | cut -d '"' -f 4)
-    wlan_fc_type=$(echo "$line" | grep -o '"wlan.fc.type": "[^"]*' | cut -d '"' -f 4)
-    wlan_fc_subtype=$(echo "$line" | grep -o '"wlan.fc.subtype": "[^"]*' | cut -d '"' -f 4)
+    frame_time=$(echo "$line" | grep -oP '(?<="frame.time": ")[^"]*' | head -n 1)
+    wlan_fc_type=$(echo "$line" | grep -oP '(?<="wlan.fc.type": ")[^"]*' | head -n 1)
+    wlan_fc_subtype=$(echo "$line" | grep -oP '(?<="wlan.fc.subtype": ")[^"]*' | head -n 1)
 
-    # Fix for "0" values
-    if [[ -n "$frame_time" || "$frame_time" == "0" || 
-          -n "$wlan_fc_type" || "$wlan_fc_type" == "0" || 
-          -n "$wlan_fc_subtype" || "$wlan_fc_subtype" == "0" ]]; then
-        echo "\"frame.time\": \"$frame_time\"," >> "$output_file"
-        echo "\"wlan.fc.type\": \"$wlan_fc_type\"," >> "$output_file"
-        echo "\"wlan.fc.subtype\": \"$wlan_fc_subtype\"," >> "$output_file"
-        echo "" >> "$output_file"  # Add a newline for readability
+    # Only print non-empty values
+    [[ -n "$frame_time" ]] && echo "\"frame.time\": \"$frame_time\"," >> "$output_file"
+    [[ -n "$wlan_fc_type" ]] && echo "\"wlan.fc.type\": \"$wlan_fc_type\"," >> "$output_file"
+    [[ -n "$wlan_fc_subtype" ]] && echo "\"wlan.fc.subtype\": \"$wlan_fc_subtype\"," >> "$output_file"
+
+    # Add newline only if at least one value was printed
+    if [[ -n "$frame_time" || -n "$wlan_fc_type" || -n "$wlan_fc_subtype" ]]; then
+        echo "" >> "$output_file"
     fi
-done < "$input_file"   
+
+done < "$input_file"
+
 unset IFS
 echo "Extraction complete...output saved in: $output_file"
