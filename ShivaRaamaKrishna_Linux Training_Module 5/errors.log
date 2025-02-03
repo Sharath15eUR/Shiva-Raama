@@ -1,0 +1,2 @@
+Error: Keyword required (-k <keyword>)
+Error: Missing input: Provide either -d <directory> or -f <file>!!!
