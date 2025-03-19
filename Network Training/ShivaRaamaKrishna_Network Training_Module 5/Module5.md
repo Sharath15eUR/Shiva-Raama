@@ -16,11 +16,21 @@ The sender's MAC address is included so that the target device knows where to se
 
 This exchange allows the sender to update its ARP table and establish direct communication at the data link layer. Without this, devices would be unable to resolve MAC addresses, preventing local network communication.
 
-![Screenshot](q1-1.png)
+![Screenshot](q2-1.png)
 
-![Screenshot](q1-2.png)
+![Screenshot](q2-2.png)
 
-![Screenshot](q1-3.png)
+![Screenshot](q3-3.png)
+
+## Question - 02
+
+### Using Packet Tracer, simulate an ARP spoofing attack. Analyze the behavior of devices on the network when they receive a malicious ARP response.
+
+![Screenshot](static-ip.png)
+
+![Screenshot](static-ip.png)
+
+![Screenshot](static-ip.png)
 
 ## Question - 03
 
@@ -39,6 +49,35 @@ The DHCP process follows four steps called DORA: Discover, Offer, Request, and A
 ![Screenshot](q4-2.png)
 
 ![Screenshot](q4-3.png)
+
+## Question - 05
+
+### Given an IP address range of 192.168.1.0/24, divide the network into 4 subnets. Task: Manually calculate the new subnet mask and the range of valid IP addresses for each subnet. Assign IP addresses from these subnets to devices in Cisco Packet Tracer and verify connectivity using ping between them.
+
+# Subnetting a /24 Network into 4 Equal Subnets
+
+## Original Network:
+- **Network Address:** 192.168.1.0/24  
+- **Number of Subnets Needed:** 4  
+- **Bits Borrowed:** 2 bits (2² = 4)  
+- **New Prefix Length:** /26  
+- **New Subnet Mask:** 255.255.255.192  
+
+## Subnet Details:
+| Subnet | Network Address  | First Usable IP  | Last Usable IP   | Broadcast Address |
+|--------|----------------|-----------------|-----------------|------------------|
+| 1      | 192.168.1.0    | 192.168.1.1     | 192.168.1.62    | 192.168.1.63    |
+| 2      | 192.168.1.64   | 192.168.1.65    | 192.168.1.126   | 192.168.1.127   |
+| 3      | 192.168.1.128  | 192.168.1.129   | 192.168.1.190   | 192.168.1.191   |
+| 4      | 192.168.1.192  | 192.168.1.193   | 192.168.1.254   | 192.168.1.255   |
+
+## Calculation Details:
+- **Subnet Mask in Binary:** `11111111.11111111.11111111.11000000`  
+- **Subnet Mask in Decimal:** `255.255.255.192`  
+- **Number of Hosts per Subnet:** `2^6 - 2 = 62 hosts`  
+- **Subnet Increment:** `64 (256 ÷ 4)`  
+- **Each Subnet Provides:** `62 Usable IPs (excluding network and broadcast addresses)`  
+
 
 ## Question - 06
 
