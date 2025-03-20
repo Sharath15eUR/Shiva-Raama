@@ -116,4 +116,45 @@ PS C:\Users\Shiva rama krishna>
 
 ```
 
+## Question - 02
+
+### Use Wireshark to capture and analyze DNS, TCP, UDP traffic and packet header, packet flow, options and flags
+
+
 ![all](arp.png)
+
+![all](tcp.png)
+
+![all](udp.png)
+
+## Question - 03
+
+### Explore traceroute/tracert for different websites eg:google.com and analyse the parameters in the output and explore different options for traceroute command
+
+```bash
+PS C:\Users\Shiva rama krishna> tracert google.com
+
+Tracing route to google.com [142.250.191.78]
+over a maximum of 30 hops:
+
+  1     5 ms     5 ms     4 ms  192.168.128.1
+  2    10 ms     7 ms     6 ms  192.168.139.67
+  3    10 ms     8 ms     7 ms  static-201.140.16.61-tataidc.co.in [61.16.140.201]
+  4    15 ms     5 ms     9 ms  142.250.171.162
+  5    10 ms    43 ms     8 ms  142.251.227.217
+  6     9 ms     9 ms     5 ms  142.251.230.70
+  7    41 ms    40 ms    38 ms  142.250.63.171
+  8    53 ms    41 ms    44 ms  142.251.252.215
+  9    75 ms     *        *     192.178.108.22
+ 10   154 ms   217 ms   185 ms  142.251.250.172
+ 11   285 ms     *        *     72.14.238.229
+ 12   305 ms   287 ms   295 ms  142.251.68.53
+ 13   272 ms   344 ms   264 ms  74.125.253.148
+ 14   243 ms   223 ms   210 ms  192.178.105.107
+ 15   333 ms   314 ms   296 ms  142.251.224.33
+ 16   279 ms   299 ms   311 ms  nuq04s43-in-f14.1e100.net [142.250.191.78]
+
+Trace complete.
+PS C:\Users\Shiva rama krishna>
+```
+
