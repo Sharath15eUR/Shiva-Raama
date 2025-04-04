@@ -83,4 +83,27 @@ CAPWAP (Control and Provisioning of Wireless Access Points) tunnel is a secure c
  
 #### How the tunnel is maintained ?
 
-   
+CAPWAP (Control And Provisioning of Wireless Access Points) is a a protocol designed to manage and access wireless access points from controller known as Wireless LAN Controller (WLC). It facilitates communication between APs and provisioning of wireless Networks.
+
+#### CAPWAP Protocol Overview:
+
+1. Control Plane: Handles Management and controls messages between the AP and WLC, such as configuration updates, authentication, and association.
+2. Data Plane: Manages the actual user data traffic, ensuring it is securely tunneled between the AP and WLC.
+
+#### Flow Between AP and Controller:
+
+1. AP discovers WLC using DHCP, DNS, or Broadcast.
+2. AP and WLC exchange control messages (authentication, configuration).
+3. CAPWAP tunnels (control & data) are established between AP and WLC.
+4. Client data passes through WLC for policy enforcement, security, and routing
+
+### 6. What is the difference between sniffer mode and moniter mode
+
+Both sniffer mode and monitor mode are used in wireless networks to capture and analyze data packets, but they serve different purposes and operate in distinct ways.
+
+#### Sniffer Mode: 
+Sniffer mode is used to capture and analyse wireless frames for troubleshooting and network analysis. In this mode Access Point captures Layer 2 wireless frames and forwards them to packet analyser tool like wireshark. It is typically used for detailed analysis, performance moniterning and debugging network issues.An AP in sniffer mode can capture all wireless traffic on a specific channel and send it to a network administrator's computer for analysis.
+
+#### Monitor Mode:
+Monitor mode is used for passive monitoring of the wireless environment, including detecting rogue APs, intrusion detection, and location-based services.In this mode, the AP does not handle data traffic between clients and the network. Instead, it acts as a dedicated sensor, continuously scanning all configured channels. It is used for security monitoring, spectrum analysis, and gathering information about the wireless environment.An AP in monitor mode can detect unauthorized devices and interference sources without participating in the actual data transmission.
+
