@@ -107,3 +107,59 @@ Sniffer mode is used to capture and analyse wireless frames for troubleshooting 
 #### Monitor Mode:
 Monitor mode is used for passive monitoring of the wireless environment, including detecting rogue APs, intrusion detection, and location-based services.In this mode, the AP does not handle data traffic between clients and the network. Instead, it acts as a dedicated sensor, continuously scanning all configured channels. It is used for security monitoring, spectrum analysis, and gathering information about the wireless environment.An AP in monitor mode can detect unauthorized devices and interference sources without participating in the actual data transmission.
 
+### 7. If WLC is deployed in WAN, which AP mode is best for local network and how ?
+
+The best mode is Flex Connect Mode (also called H-Reap)
+
+- FlexConnect APs to can switch traffic locally at the site , this means the data traffic does not need to traverse the WAN to connect to WLC. This reduces latency and improves performance for local network traffic.
+
+- FlexConnect allows APs to work continuouly even if the connection to the WLC is lost 
+
+- While data traffic is handled locally, management traffic still goes to the WLC. This allows for centralized control and policy enforcement without compromising local performance
+
+### 8. What are the challenges if deploying autonomous APs (more than 50) in a large network like a university?
+
+Autonomous APs (a.k.a. standalone APs) work independently without a controller.
+
+#### Challenges in large deployments:
+
+1. Manual configuration: Each AP must be configured separately.
+
+2. No centralized management: Troubleshooting and updates are harder.
+
+3. Inefficient roaming: Users may face connection drops when moving.
+
+4. Scalability issues: Hard to manage 50+ APs without automation.
+
+### 9. What happens to wireless client connected to Lightweight AP in local mode if WLC goes down?
+
+#### Overview
+
+In a Lightweight Access Point (LWAP) setup using Local Mode, the AP is heavily dependent on the Wireless LAN Controller (WLC) for control, configuration, and data forwarding. The AP and WLC communicate via a CAPWAP tunnel.
+
+#### What Happens When the WLC Goes Down?
+
+| Aspect               | Behavior                                                                 |
+|----------------------|--------------------------------------------------------------------------|
+| CAPWAP Tunnel     | Breaks; the AP can’t reach the WLC.                                      |
+| Client Sessions   | Clients are disconnected immediately.                                |
+| Data Traffic      | Not forwarded; AP can’t process data without the WLC.                    |
+| New Connections   | Fail; AP stops broadcasting SSID and authenticating clients.             |
+| Roaming           | Not possible; APs can't coordinate without the WLC.                      |
+| AP Behavior       | AP repeatedly tries to reconnect to the WLC or backup WLC if configured. |
+
+---
+
+#### Why This Happens
+
+- In Local Mode, the AP acts only as a radio head.
+- All intelligence (like routing, authentication, encryption) resides in the WLC.
+- Without the WLC, the AP cannot function.
+
+#### Solution: Use FlexConnect Mode
+
+If availability is critical, use FlexConnect Mode:
+
+- APs can continue serving clients even if the WLC goes down.
+- Data is switched locally instead of through the controller.
+- Great for branch offices or networks with unreliable WAN links.
